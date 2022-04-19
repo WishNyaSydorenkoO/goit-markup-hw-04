@@ -125,17 +125,23 @@ body {
 }
 .contacts-list .header-tel,
 .contacts-list .header-mail {
-  display: block;
-  padding-top: 32px;
-  /* вроде как нужно было расширить, для удобства, кнопки */
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
 }
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts-list {
   display: flex;
-  margin-left: 331px;
+  margin-left: 305px;
+  align-items: center;
 }
 .contacts-list .contacts-item + .contacts-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .header-logo {
   display: block;
@@ -179,9 +185,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-contacts-color);
-}
-.header-mail:hover {
-  color: var(--accent-color);
 }
 /*banner*/
 
